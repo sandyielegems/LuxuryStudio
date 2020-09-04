@@ -33,7 +33,6 @@ include("includes/header.php");
                 <button type="submit" name="signup-submit">Signup</button>
         </section>
     </div>
-
 </main>
 
 <?php
