@@ -10,7 +10,6 @@ include("includes/header.php");
         echo '<p>U bent uitgelogd</p>';
     }
     ?>
-
 </main>
 
 <?php
