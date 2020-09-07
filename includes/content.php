@@ -397,7 +397,7 @@
                     </div>
                 </div> -->
             <div class="col-md appointment pl-md-5 ftco-animate">
-                <h3 class="mb-3">Afspraak maken</h3>
+                <h3 class="mb-3">AFSPRAAK MAKEN</h3>
                 <form action="#" class="appointment-form">
 
                     <div class="row form-group d-flex">
@@ -429,19 +429,7 @@
                         </div>
                     </div>
 
-
-                    <!-- <div class="form-group">
-                        <div class="dropdown">
-                            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Behandeling
-                                <span class="caret"></span></button>
-                            <ul class="dropdown-menu">
-                                <li class="divider"><a href="#">Behandeling 1 - manicure</a></li>
-                                <li class="divider"><a href="#">Behandeling 2 - gelnagels plaatsing</a></li>
-                                <li class="divider"><a href="#">Behandeling 3 - gelnagels bijwerken</a></li>
-                            </ul>
-                        </div>
-                    </div> -->
-
+                    <!-- radio buttons  -->
                     <div class="form-check pt-4">
                         <label class="form-check-label text-white">
                             <input type="radio" class="form-check-input" name="optradio">Behandeling 1 - manicure

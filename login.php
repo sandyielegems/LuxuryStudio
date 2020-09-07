@@ -16,10 +16,9 @@ include("includes/header.php");
             <input type="password" name="pwd" placeholder="Wachtwoord">
             <button type="submit" name="login-submit">Login</button>
             </form>
-            <a href="signup.php">Signup</a>';
+            <li class="nav-item"><a href="signup.php" class="nav-link">Signup</a></li>';
         }
         ?>
-
 
     </div>
 </header>
