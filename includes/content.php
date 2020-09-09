@@ -43,8 +43,8 @@
         <div class="container">
             <div class="row justify-content-center mb-5 pb-3">
                 <div class="col-md-7 heading-section ftco-animate text-center">
-                    <h2 class="mb-4">Our Beauty Experts</h2>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <!-- <h2 class="mb-4">Nagelstyliste</h2> -->
+                    <!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
                 </div>
             </div>
             <div class="row justify-content-center">
@@ -101,64 +101,66 @@
         </div>
     </section>
 
-    <section class="ftco-section ftco-discount img" style="background-image: url(images/bg_2.jpg);">
+    <!-- promo  -->
+    <section class="ftco-section ftco-discount img" style="background-image: url(images/nail18.png);">
         <div class="overlay"></div>
         <div class="container">
             <div class="row justify-content-end">
                 <div class="col-md-5 discount ftco-animate">
-                    <h3>Save up to 25% Off</h3>
-                    <h2 class="mb-4">Student Discount</h2>
-                    <p class="mb-4">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-                    <p><a href="#" class="btn btn-white btn-outline-white px-4 py-3">Book Now</a></p>
+                    <h3>Klantenkaart</h3>
+                    <h2 class="mb-4">Actie 10 + 1 gratis</h2>
+                    <p class="mb-4"><strong>Vraag onze klantenkaart, u betaalt 10 beurten en u krijgt de 11e beurt gratis.</strong></p>
+                    <p><a href="#" class="btn btn-white btn-outline-white px-4 py-3">Afspraak maken</a></p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- foto's -->
     <section class="ftco-section">
         <div class="container">
             <div class="row justify-content-center mb-5 pb-3">
                 <div class="col-md-7 heading-section text-center ftco-animate">
-                    <h2 class="mb-4">Our Work</h2>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <h2 class="mb-4">Foto's</h2>
+                    <!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4 ftco-animate">
                     <a href="#" class="work-entry">
-                        <img src="images/work-1.jpg" class="img-fluid" alt="Colorlib Template">
+                        <img src="images/nail7.jpg" class="img-fluid" alt="Colorlib Template">
                         <div class="info d-flex align-items-center">
                             <div>
                                 <div class="icon mb-4 d-flex align-items-center justify-content-center">
                                     <span class="icon-search"></span>
                                 </div>
-                                <h3>Lips Makeover</h3>
+                                <h3>Manicure</h3>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4 ftco-animate">
                     <a href="#" class="work-entry">
-                        <img src="images/work-2.jpg" class="img-fluid" alt="Colorlib Template">
+                        <img src="images/nail5.jpg" class="img-fluid" alt="Colorlib Template">
                         <div class="info d-flex align-items-center">
                             <div>
                                 <div class="icon mb-4 d-flex align-items-center justify-content-center">
                                     <span class="icon-search"></span>
                                 </div>
-                                <h3>Hair Style</h3>
+                                <h3>Gelnagels</h3>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-4 ftco-animate">
                     <a href="#" class="work-entry">
-                        <img src="images/work-3.jpg" class="img-fluid" alt="Colorlib Template">
+                        <img src="images/nail8.jpg" class="img-fluid" alt="Colorlib Template">
                         <div class="info d-flex align-items-center">
                             <div>
                                 <div class="icon mb-4 d-flex align-items-center justify-content-center">
                                     <span class="icon-search"></span>
                                 </div>
-                                <h3>Makeup</h3>
+                                <h3>Fantasie</h3>
                             </div>
                         </div>
                     </a>
@@ -198,12 +200,13 @@
         </div>
     </section> -->
 
+    <!-- prijzen  -->
     <section class="ftco-section">
         <div class="container">
             <div class="row justify-content-center mb-5 pb-3">
                 <div class="col-md-7 heading-section text-center ftco-animate">
                     <h2 class="mb-4">Prijzen</h2>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
                 </div>
             </div>
             <div class="row">
@@ -310,11 +313,12 @@
     </section> -->
 
     <!-- BLOG  -->
+    <!--
     <section class="ftco-section">
         <div class="container">
             <div class="row justify-content-center mb-5 pb-3">
                 <div class="col-md-7 heading-section ftco-animate text-center">
-                    <h2 class="mb-4">Recent from blog</h2>
+                    <h2 class="mb-4">Blog</h2>
                     <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                 </div>
             </div>
@@ -367,8 +371,7 @@
                 </div>
             </div>
         </div>
-    </section>
-
+    </section>  -->
 
     <section class="ftco-section ftco-appointment">
         <div class="overlay"></div>

@@ -71,7 +71,7 @@ session_start();
                     <li class="nav-item"><a href="services.php" class="nav-link">Prijzen</a></li>
                     <li class="nav-item"><a href="blog.php" class="nav-link">Blog</a></li>
                     <li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
-                    <li class="nav-item"><a href="login.php" class="nav-link">Login</a></li>
+                    <!-- <li class="nav-item"><a href="login.php" class="nav-link">Login</a></li> -->
                     <!-- <button type="submit" name="login-submit">Login</button> -->
                     </form>
                 </ul>
@@ -79,15 +79,3 @@ session_start();
         </div>
     </nav>
     <!-- END nav -->
-    <!-- 
-    <div>
-        <form action="includes/login.inc.php" method="post">
-            <input type="text" name="mailuid" placeholder="Username of e-mail">
-            <input type="password" name="pwd" placeholder="Wachtwoord">
-            <button type="submit" name="login-submit">Login</button>
-        </form>
-        <a href="signup.php">Signup</a>
-        <form action="includes/logout.inc.php" method="post">
-            <button type="submit" name="logout-submit">Logout</button>
-        </form>
-    </div> -->

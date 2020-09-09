@@ -2,7 +2,7 @@
 include("includes/header.php");
 ?>
 
-<main>
+<main class="text-center">
     <?php
     if (isset($_SESSION['userId'])) {
         echo '<p>U bent ingelogd</p>';
@@ -11,6 +11,11 @@ include("includes/header.php");
     }
     ?>
 </main>
+
+
+<?php
+include("login.php");
+?>
 
 <?php
 include("includes/content.php");

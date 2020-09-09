@@ -5,7 +5,7 @@ include("includes/header.php");
 <main>
     <div>
         <section>
-            <h1>Signup</h1>
+            <h3 class="text-center">Signup</h3>
             <?php
             if (isset($_GET['error'])) {
                 if ($_GET['error'] == "emptyfields") {
@@ -26,11 +26,13 @@ include("includes/header.php");
             }
             ?>
             <form action="includes/signup.inc.php" method="post">
-                <input type="text" name="uid" placeholder="Username"><br>
-                <input type="text" name="mail" placeholder="E-mail"><br>
-                <input type="password" name="pwd" placeholder="Password"><br>
-                <input type="password" name="pwd-repeat" placeholder="Repeat password"><br>
-                <button type="submit" name="signup-submit">Signup</button>
+                <p class="button text-center">
+                    <input class="mb-3" type="text" name="uid" placeholder="Username"><br>
+                    <input class="mb-3" type="text" name="mail" placeholder="E-mail"><br>
+                    <input class="mb-3" type="password" name="pwd" placeholder="Password"><br>
+                    <input class="mb-3" type="password" name="pwd-repeat" placeholder="Repeat password"><br>
+                    <button class="btn btn-primary btn-outline-primary px-4 py-3" type="submit" name="signup-submit">Signup</button>
+                </p>
         </section>
     </div>
 </main>
