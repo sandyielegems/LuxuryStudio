@@ -141,7 +141,7 @@ dt {
 }
 
 dd {
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     margin-left: 0;
 }
 
@@ -171,11 +171,11 @@ sup {
 }
 
 sub {
-    bottom: -.25em;
+    bottom: -0.25em;
 }
 
 sup {
-    top: -.5em;
+    top: -0.5em;
 }
 
 a {
@@ -330,7 +330,7 @@ legend {
     width: 100%;
     max-width: 100%;
     padding: 0;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     font-size: 1.5rem;
     line-height: inherit;
     color: inherit;
@@ -2312,13 +2312,13 @@ select.form-control-lg:not([size]):not([multiple]),
     z-index: 5;
     display: none;
     max-width: 100%;
-    padding: .5rem;
-    margin-top: .1rem;
-    font-size: .875rem;
+    padding: 0.5rem;
+    margin-top: 0.1rem;
+    font-size: 0.875rem;
     line-height: 1;
     color: #fff;
     background-color: rgba(40, 167, 69, 0.8);
-    border-radius: .2rem;
+    border-radius: 0.2rem;
 }
 
 .was-validated .form-control:valid,
@@ -2425,13 +2425,13 @@ select.form-control-lg:not([size]):not([multiple]),
     z-index: 5;
     display: none;
     max-width: 100%;
-    padding: .5rem;
-    margin-top: .1rem;
-    font-size: .875rem;
+    padding: 0.5rem;
+    margin-top: 0.1rem;
+    font-size: 0.875rem;
     line-height: 1;
     color: #fff;
     background-color: rgba(220, 53, 69, 0.8);
-    border-radius: .2rem;
+    border-radius: 0.2rem;
 }
 
 .was-validated .form-control:invalid,
@@ -5593,9 +5593,9 @@ input[type="button"].btn-block {
 }
 
 .progress-bar-striped {
-    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: -webkit-linear-gradient( 45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient( 45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient( 45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-size: 1rem 1rem;
 }
 
@@ -5845,14 +5845,14 @@ input[type="button"].btn-block {
     line-height: 1;
     color: #000;
     text-shadow: 0 1px 0 #fff;
-    opacity: .5;
+    opacity: 0.5;
 }
 
 .close:hover,
 .close:focus {
     color: #000;
     text-decoration: none;
-    opacity: .75;
+    opacity: 0.75;
 }
 
 .close:not(:disabled):not(.disabled) {
@@ -6014,11 +6014,11 @@ button.close {
 }
 
 .modal-footer> :not(:first-child) {
-    margin-left: .25rem;
+    margin-left: 0.25rem;
 }
 
 .modal-footer> :not(:last-child) {
-    margin-right: .25rem;
+    margin-right: 0.25rem;
 }
 
 .modal-scrollbar-measure {
@@ -6466,9 +6466,9 @@ button.close {
 
 .carousel-fade .carousel-item {
     opacity: 0;
-    -webkit-transition-duration: .6s;
-    -o-transition-duration: .6s;
-    transition-duration: .6s;
+    -webkit-transition-duration: 0.6s;
+    -o-transition-duration: 0.6s;
+    transition-duration: 0.6s;
     -webkit-transition-property: opacity;
     -o-transition-property: opacity;
     transition-property: opacity;
@@ -6533,7 +6533,7 @@ button.close {
     color: #fff;
     text-decoration: none;
     outline: 0;
-    opacity: .9;
+    opacity: 0.9;
 }
 
 .carousel-control-prev {
@@ -9751,9 +9751,9 @@ span {
 }
 
 a {
-    -webkit-transition: .3s all ease;
-    -o-transition: .3s all ease;
-    transition: .3s all ease;
+    -webkit-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    transition: 0.3s all ease;
     color: #fa5bdd;
 }
 
@@ -9807,8 +9807,8 @@ h5,
 
 .ftco-navbar-light .navbar-nav>.nav-item>.nav-link {
     font-size: 13px;
-    padding-top: .9rem;
-    padding-bottom: .9rem;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
     padding-left: 0;
     padding-right: 0;
     color: rgba(255, 255, 255, 0.9);
@@ -9878,8 +9878,8 @@ h5,
     color: #fff;
     border: 1px solid #fa5bdd;
     background: #fa5bdd;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     padding-left: 20px;
     padding-right: 20px;
     margin-top: 4px;
@@ -9914,7 +9914,7 @@ h5,
     padding-right: 0;
     text-transform: uppercase;
     font-size: 16px;
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
 }
 
 .ftco-navbar-light.scrolled {
@@ -9937,7 +9937,7 @@ h5,
     background: #fa5bdd;
     border: none !important;
     padding-top: 0.5rem !important;
-    padding-bottom: .5rem !important;
+    padding-bottom: 0.5rem !important;
     padding-left: 20px;
     padding-right: 20px;
     margin-top: 6px !important;
@@ -9981,7 +9981,7 @@ h5,
     padding-right: 0;
     text-transform: uppercase;
     font-size: 16px;
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
 }
 
 .ftco-navbar-light.scrolled .nav-link {
@@ -9996,15 +9996,15 @@ h5,
 
 .ftco-navbar-light.scrolled.awake {
     margin-top: 0px;
-    -webkit-transition: .3s all ease-out;
-    -o-transition: .3s all ease-out;
-    transition: .3s all ease-out;
+    -webkit-transition: 0.3s all ease-out;
+    -o-transition: 0.3s all ease-out;
+    transition: 0.3s all ease-out;
 }
 
 .ftco-navbar-light.scrolled.sleep {
-    -webkit-transition: .3s all ease-out;
-    -o-transition: .3s all ease-out;
-    transition: .3s all ease-out;
+    -webkit-transition: 0.3s all ease-out;
+    -o-transition: 0.3s all ease-out;
+    transition: 0.3s all ease-out;
 }
 
 .ftco-navbar-light.scrolled .navbar-brand {
@@ -10053,8 +10053,8 @@ h5,
     left: 0;
     right: 0;
     bottom: 0;
-    content: '';
-    opacity: .1;
+    content: "";
+    opacity: 0.1;
     background: #000;
 }
 
@@ -10147,7 +10147,7 @@ h5,
 }
 
 .owl-carousel .owl-item {
-    opacity: .4;
+    opacity: 0.4;
 }
 
 .owl-carousel .owl-item.active {
@@ -10210,7 +10210,7 @@ h5,
     bottom: 0;
     width: 14px;
     height: 14px;
-    content: '';
+    content: "";
     border: 1px solid #e6e6e6;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -10399,6 +10399,7 @@ h5,
     display: block;
     width: 100%;
     text-align: center;
+    /* background-color: red; */
 }
 
 .work-entry .info h3 {
@@ -10411,7 +10412,7 @@ h5,
 .work-entry .info .icon {
     width: 50px;
     height: 50px;
-    bordeR: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     margin: 0 auto;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -10432,7 +10433,7 @@ h5,
 }
 
 .partner .partner-entry {
-    opacity: .3;
+    opacity: 0.3;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
@@ -10860,7 +10861,7 @@ textarea.form-control {
 .ftco-tab-nav li a {
     text-transform: uppercase;
     font-size: 14px;
-    letter-spacing: .2em;
+    letter-spacing: 0.2em;
     color: #ccc;
     border: 2px solid #ccc;
     border-radius: 0 !important;
@@ -10884,7 +10885,7 @@ textarea.form-control {
 .ftco-section .ftco-sub-title {
     font-size: 16px;
     text-transform: uppercase;
-    letter-spacing: .5em;
+    letter-spacing: 0.5em;
     color: #d4d4d4;
     font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 300;
@@ -10922,7 +10923,7 @@ textarea.form-control {
 
 .ftco-footer .ftco-footer-logo {
     text-transform: uppercase;
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
 }
 
 .ftco-footer .ftco-footer-widget h2 {
@@ -10940,7 +10941,7 @@ textarea.form-control {
     position: absolute;
     bottom: -15px;
     left: 0;
-    content: '';
+    content: "";
     width: 70px;
     height: 1px;
     background: #fff;
@@ -11162,7 +11163,7 @@ textarea.form-control {
     right: 0;
     bottom: 0;
     background: #fff;
-    opacity: .4;
+    opacity: 0.4;
 }
 
 .ftco-counter {
@@ -11220,7 +11221,7 @@ textarea.form-control {
 .ftco-counter .ftco-label {
     font-size: 12px;
     text-transform: uppercase;
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
 }
 
 .block-20 {
@@ -11521,7 +11522,7 @@ textarea.form-control {
     text-transform: uppercase;
     font-weight: bold;
     color: #fff;
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
 }
 
 .post-info>div {
@@ -11531,7 +11532,7 @@ textarea.form-control {
 .post-info>div .seperator {
     display: inline-block;
     margin: 0 10px;
-    opacity: .5;
+    opacity: 0.5;
 }
 
 .tagcloud a {
@@ -11597,7 +11598,7 @@ textarea.form-control {
 .comment-list li .comment-body .meta {
     text-transform: uppercase;
     font-size: 13px;
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
     color: #ccc;
 }
 
@@ -11607,7 +11608,7 @@ textarea.form-control {
     color: #000;
     text-transform: uppercase;
     font-size: 11px;
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
     font-weight: 400;
     border-radius: 4px;
 }
@@ -11796,9 +11797,9 @@ textarea.form-control {
     border-radius: 16px;
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: opacity .2s ease-out, visibility 0s linear .2s;
-    -o-transition: opacity .2s ease-out, visibility 0s linear .2s;
-    transition: opacity .2s ease-out, visibility 0s linear .2s;
+    -webkit-transition: opacity 0.2s ease-out, visibility 0s linear 0.2s;
+    -o-transition: opacity 0.2s ease-out, visibility 0s linear 0.2s;
+    transition: opacity 0.2s ease-out, visibility 0s linear 0.2s;
     z-index: 1000;
 }
 
@@ -11818,9 +11819,9 @@ textarea.form-control {
 }
 
 #ftco-loader.show {
-    -webkit-transition: opacity .4s ease-out, visibility 0s linear 0s;
-    -o-transition: opacity .4s ease-out, visibility 0s linear 0s;
-    transition: opacity .4s ease-out, visibility 0s linear 0s;
+    -webkit-transition: opacity 0.4s ease-out, visibility 0s linear 0s;
+    -o-transition: opacity 0.4s ease-out, visibility 0s linear 0s;
+    transition: opacity 0.4s ease-out, visibility 0s linear 0s;
     visibility: visible;
     opacity: 1;
 }

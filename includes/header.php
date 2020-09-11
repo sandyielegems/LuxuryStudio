@@ -67,7 +67,7 @@ session_start();
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="work.php" class="nav-link">Foto's</a></li>
+                    <li class="nav-item"><a href="gallery.php" class="nav-link">Foto's</a></li>
                     <li class="nav-item"><a href="services.php" class="nav-link">Prijzen</a></li>
                     <li class="nav-item"><a href="blog.php" class="nav-link">Blog</a></li>
                     <li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>

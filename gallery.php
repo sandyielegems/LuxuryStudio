@@ -1,6 +1,12 @@
 <?php
+$_SESSION['username'] = 'Admin';
+?>
+
+<?php
 include("includes/header.php");
 ?>
+
+
 
 <section class="ftco-section">
 	<div class="container">
@@ -20,42 +26,59 @@ include("includes/header.php");
 		</div>
 
 		<!-- gallery -->
-		<div class="col-md-4 ftco-animate">
-			<a href="#">
-				<div>
-					<h3>Title</h3>
-					<p>paragraaf</p>
-				</div>
-			</a>
+		<div class="row">
+			<div class="col-md-4 ftco-animate">
+				<?php
+				include_once 'includes/dbh.inc.php';
 
-			<a href="#">
-				<div>
-					<h3>Title</h3>
-					<p>paragraaf</p>
-				</div>
-			</a>
+				$sql = "SELECT * FROM gallery ORDER BY orderGallery DESC;";
+				$stmt = mysqli_stmt_init($conn);
+				if (!mysqli_stmt_prepare($stmt, $sql)) {
+					echo "SQL statement failed";
+				} else {
+					mysqli_stmt_execute($stmt);
+					$result = mysqli_stmt_get_result($stmt);
 
-			<a href="#">
-				<div>
-					<h3>Title</h3>
-					<p>paragraaf</p>
-				</div>
-			</a>
+					while ($row = mysqli_fetch_assoc($result)) {
+						echo '<a href="#" class="work-entry">
+									<div style="background-image: url(../images/gallery/' . $row["imgFullNameGallery"] . ');"></div>
+										<h3>' . $row["titleGallery"] . '</h3>
+										<p>' . $row["descGallery"] . '</p>
+								</a>';
+					}
+				}
+
+				?>
+			</div>
 
 		</div>
 
+
 		<!-- upload form  -->
+
+		<!-- <?php
+				if (isset($_SESSION['username'])) {
+					echo '<div>
+				<form action="includes/gallery-upload.inc.php" method="post" enctype="multipart/form-data">
+					<input type="text" name="filename" placeholder="File name ...">
+					<input type="text" name="filetitle" placeholder="Image title ...">
+					<input type="text" name="filedesc" placeholder="Image description ...">
+					<input type="file" name="file">
+					<button type="submit" name="submit">UPLOAD</button>
+				</form>
+			</div>';
+				}
+				?> -->
+
 		<div>
 			<form action="includes/gallery-upload.inc.php" method="post" enctype="multipart/form-data">
 				<input type="text" name="filename" placeholder="File name ...">
 				<input type="text" name="filetitle" placeholder="Image title ...">
 				<input type="text" name="filedesc" placeholder="Image description ...">
-
+				<input type="file" name="file">
+				<button type="submit" name="submit">UPLOAD</button>
 			</form>
-
 		</div>
-
-
 
 		<div class="row">
 			<div class="col-md-4 ftco-animate">
