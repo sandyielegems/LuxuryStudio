@@ -2,6 +2,10 @@
 include("includes/header.php");
 ?>
 
+<?php
+include("includes/navbar.php");
+?>
+
 <main>
     <div>
         <section>
@@ -33,6 +37,7 @@ include("includes/header.php");
                     <input class="mb-3" type="password" name="pwd-repeat" placeholder="Repeat password"><br>
                     <button class="btn btn-primary btn-outline-primary px-4 py-3" type="submit" name="signup-submit">Signup</button>
                 </p>
+            </form>
         </section>
     </div>
 </main>

@@ -2464,7 +2464,7 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 { line-height: 1.4; color: #000; fon
 
 .btn { cursor: pointer; -webkit-border-radius: 30px; -moz-border-radius: 30px; -ms-border-radius: 30px; border-radius: 30px; box-shadow: none !important; font-size: 13px; }
 .btn:hover, .btn:active, .btn:focus { outline: none; }
-.btn.btn-primary { background: #fa5bdd; border: 1px solid #fa5bdd; color: #fff; }
+.btn.btn-primary { background: #fa5bdd; border: 1px solid #fa5bdd; }
 .btn.btn-primary:hover { border: 1px solid #fa5bdd; background: transparent !important; color: #fa5bdd; }
 .btn.btn-primary.btn-outline-primary { border: 1px solid #fa5bdd; background: transparent; color: #fa5bdd; }
 .btn.btn-primary.btn-outline-primary:hover { border: 1px solid transparent; background: #fa5bdd; color: #fff; }

@@ -1,13 +1,12 @@
 <?php
 
-if (isset($_POST['submit'])) {
+if (isset($_POST['toevoegSubmit'])) {
     $newFileName = $_POST['filename'];
-    if (empty($newFileName)) {
+    if (empty($_POST['filename'])) {
         $newFileName = "gallery";
     } else {
         $newFileName = strtolower(str_replace(" ", "-", $newFileName));
     }
-
     $imageTitle = $_POST['filetitle'];
     $imageDesc = $_POST['filedesc'];
 
@@ -20,20 +19,20 @@ if (isset($_POST['submit'])) {
     $fileSize = $file["size"];
 
     $fileExt = explode(".", $fileName);
-    $fileEActuaExt = strtolower(end($fileExt));
+    $fileActualExt = strtolower(end($fileExt));
 
     $allowed = array("jpg", "jpeg", "png");
-
-    if (in_array($fileEActuaExt, $allowed)) {
+    if (in_array($fileActualExt, $allowed)) {
         if ($fileError === 0) {
             if ($fileSize < 2000000) {
-                $imageFullName = $newFileName . "." . uniqid("", true) . "." . $fileEActuaExt;
-                $fileDestination = "../images/gallery/" . $imageFullName;
+                $imageFullName = $newFileName . "." . uniqid() . "." . $fileActualExt;
+                $fileDestination = "../images/" . $imageFullName;
 
-                include_once "dbh.inc.php";
+
+                include_once('dbh.inc.php');
 
                 if (empty($imageTitle) || empty($imageDesc)) {
-                    header("Location: gallery.php?upload=empty");
+                    header('Location: ../oefeningen.php?upload=empty');
                     exit();
                 } else {
                     $sql = "SELECT * FROM gallery;";
@@ -46,31 +45,31 @@ if (isset($_POST['submit'])) {
                         $rowCount = mysqli_num_rows($result);
                         $setImageOrder = $rowCount + 1;
 
-                        $sql = "INSERT INTO gallery (titleGallery, descGallery, imgFullNameGallery, orderGallery) VALUES (?, ?, ?, ?);";
+
+                        $sql = "INSERT INTO gallery (titleGallery, descGallery, imgFullGallery, orderGallery) VALUES (?, ?, ?, ?);";
                         if (!mysqli_stmt_prepare($stmt, $sql)) {
-                            echo "SQL statement failed";
+                            echo "SQL statement verkeerd!";
                         } else {
                             mysqli_stmt_bind_param($stmt, "ssss", $imageTitle, $imageDesc, $imageFullName, $setImageOrder);
                             mysqli_stmt_execute($stmt);
 
+
                             move_uploaded_file($fileTempName, $fileDestination);
-                            header("Location: ../index.php#gallery");
+
+                            header('location: ../oefeningen.php?upload=success');
                         }
                     }
                 }
             } else {
-                echo "Filesize is te groot";
+                echo 'File size is to big';
                 exit();
             }
         } else {
-            echo "Er is een fout opgetreden";
+            echo 'You had an error';
             exit();
         }
     } else {
-        echo "Selecteer een juiste filetype";
+        echo 'You need to upload a proper file type';
         exit();
     }
-
-
-    // print_r($file);
 }
