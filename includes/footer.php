@@ -30,31 +30,20 @@
             <div class="col-md-4">
                 <div class="ftco-footer-widget mb-4">
                     <h2 class="ftco-heading-2">Nog vragen?</h3>
-                        <form action="#" class="appointment-form">
+                        <form action="../contact.php" class="appointment-form" method="post">
 
                             <div class="row form-group d-flex">
                                 <div class="col">
-                                    <input type="text" class="form-control" placeholder="Naam">
+                                    <input type="text" class="form-control" name="name" placeholder="Naam">
+                                    <input type="text" class="form-control" name="mail" placeholder="E-mail">
+                                    <input type="text" class="form-control" name="subject" placeholder="Onderwerp">
+                                    <textarea class="form-control mt-3" name="message" placeholder="Stel hier uw vraag"></textarea>
+                                    <button type="submit" name="submit" class="btn btn-white btn-outline-white py-3 px-4 ml-2 mt-4">Verstuur</button>
                                 </div>
-                            </div>
-                            <div class="row form-group d-flex">
-                                <div class="col">
-                                    <input type="text" class="form-control" placeholder="E-mail">
-                                </div>
-                            </div>
-                            <div class="row form-group d-flex">
-                                <div class="col">
-                                    <textarea name=" opm" id="" cols="30" rows="3" class="form-control" placeholder="Stel hier uw vraag"></textarea>
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <input type="submit" value="Verstuur" class="btn btn-white btn-outline-white py-3 px-4">
                             </div>
                         </form>
-
                 </div>
             </div>
-
         </div>
 
 

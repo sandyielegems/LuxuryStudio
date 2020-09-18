@@ -3,7 +3,7 @@
      <div class="container">
          <div class="col-md appointment pl-md-5 ftco-animate">
              <h3 class="mb-3">AFSPRAAK MAKEN</h3>
-             <form action="#" class="appointment-form">
+             <form action="contactform.php" class="appointment-form" method="post">
 
                  <div class="row form-group d-flex">
                      <div class="col-md-6">
@@ -11,7 +11,7 @@
                          <input type="text" class="form-control">
                      </div>
                      <div class="col-md-6">
-                         <label class="text-white" for="name">Achternaam</label>
+                         <label class="text-white" for="lastname">Achternaam</label>
                          <input type="text" class="form-control">
                      </div>
 
@@ -62,7 +62,7 @@
                      <textarea name="opm" id="" cols="30" rows="3" class="form-control"></textarea>
                  </div>
                  <div class="form-group">
-                     <input type="submit" value="Afspraak aanvragen" class="btn btn-white btn-outline-white py-3 px-4">
+                     <button type="submit" name="submit" class="btn btn-white btn-outline-white py-3 px-4">Afspraak aanvragen</button>
                  </div>
                  <div class="text-white">U zal een e-mail ontvangen met de bevestiging of een ander voorstel voor een afspraak.</div>
              </form>
