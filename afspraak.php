@@ -1,58 +1,41 @@
  <section class="ftco-section ftco-appointment">
      <div class="overlay"></div>
      <div class="container">
-         <!-- <div class="row d-md-flex align-items-center">
-                <div class="col-md-2"></div>
-                <div class="col-md-4 d-flex align-self-stretch ftco-animate">
-                    <div class="appointment-info text-center p-5">
-                        <div class="mb-4">
-                            <h3 class="mb-3">Adres</h3>
-                            <p> Londerzeel</p>
-                        </div>
-                        <div class="mb-4">
-                            <h3 class="mb-3">Telefoonnummer</h3>
-                            <p class="day"><strong>0490 44 86 76</strong> </p>
-                        </div>
-                        <div class="mb-4">
-                            <h3 class="mb-3">E-mail</h3>
-                            <p class="day"><strong>kristelverpeet@hotmail.com</strong> </p>
-                        </div>
-                        <div>
-                            <h3 class="mb-3">Openingsuren</h3>
-                            <p class="day"><strong>Enkel op afspraak</strong></p>
-                            <span>08:00am - 09:00pm</span> 
-                        </div>
-                    </div>
-                </div> -->
          <div class="col-md appointment pl-md-5 ftco-animate">
              <h3 class="mb-3">AFSPRAAK MAKEN</h3>
              <form action="#" class="appointment-form">
 
                  <div class="row form-group d-flex">
                      <div class="col-md-6">
-                         <input type="text" class="form-control" placeholder="Voornaam">
+                         <label class="text-white" for="firstname">Voornaam</label>
+                         <input type="text" class="form-control">
                      </div>
                      <div class="col-md-6">
-                         <input type="text" class="form-control" placeholder="Achternaam">
+                         <label class="text-white" for="name">Achternaam</label>
+                         <input type="text" class="form-control">
                      </div>
 
                      <div class="col-md-6">
-                         <input type="text" class="form-control" placeholder="Telefoonnummer">
+                         <label class="text-white" for="tel">Telefoonnummer</label>
+                         <input type="text" class="form-control">
                      </div>
                      <div class="col-md-6">
-                         <input type="text" class="form-control" placeholder="E-mail">
+                         <label class="text-white" for="email">E-mail</label>
+                         <input type="text" class="form-control">
                      </div>
 
                      <div class="col-md-6">
                          <div class="input-wrap">
+                             <label class="text-white" for="date">Datum</label>
                              <div class="icon"><span class="ion-md-calendar"></span></div>
-                             <input type="text" id="appointment_date" class="form-control" placeholder="Datum">
+                             <input type="text" id="appointment_date" class="form-control">
                          </div>
                      </div>
                      <div class="col-md-6">
                          <div class="input-wrap">
+                             <label class="text-white" for="hour">Gewenste uur</label>
                              <div class="icon"><span class="ion-md-time"></span></div>
-                             <input type="time" id="default-picker" class="form-control" placeholder="Uur">
+                             <input type="time" id="default-picker" class="form-control">
                          </div>
                      </div>
                  </div>
@@ -75,11 +58,12 @@
                  </div>
 
                  <div class="form-group pt-4">
-                     <textarea name="" id="" cols="30" rows="3" class="form-control" placeholder="Opmerkingen"></textarea>
+                     <textarea name="opm" id="" cols="30" rows="3" class="form-control" placeholder="Opmerkingen"></textarea>
                  </div>
                  <div class="form-group">
                      <input type="submit" value="Afspraak aanvragen" class="btn btn-white btn-outline-white py-3 px-4">
                  </div>
+                 <div class="text-white">U zal een e-mail ontvangen met de bevestiging of een ander voorstel voor een afspraak.</div>
              </form>
          </div>
      </div>

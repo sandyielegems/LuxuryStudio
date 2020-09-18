@@ -59,8 +59,8 @@
                     <div class="block-23 mb-3">
                         <ul>
                             <li><span class="icon icon-map-marker"></span><span class="text">Londerzeel</span></li>
-                            <li><a href="#"><span class="icon icon-phone"></span><span class="text">0490 44 86 76</span></a></li>
-                            <li><a href="#"><span class="icon icon-envelope"></span><span class="text">kristelverpeet@hotmail.com</span></a></li>
+                            <li><span class="icon icon-phone"></span><span class="text">0490 44 86 76</span></li>
+                            <li><a href="mailto:kristelverpeet@hotmail.com"><span class="icon icon-envelope"></span><span class="text">kristelverpeet@hotmail.com</span></a></li>
                         </ul>
                     </div>
                 </div>

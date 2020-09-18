@@ -14,7 +14,7 @@
 					<input type="text" name="filename" placeholder="File name ..." class="mb-3">
 					<input type="text" name="filetitle" placeholder="Image title ..." class="mb-3">
 					<input type="text" name="filedesc" placeholder="Image description ..." class="mb-3">
-					<input type="file" name="file" class="btn btn-primary"><br>
+					<input type="file" name="file"><br>
 					<button type="submit" name="submit" class="btn btn-primary mb-4">UPLOAD</button>
 				</form>
 			</div>';
@@ -39,7 +39,7 @@
 							<a href="#" class="img-fluid">
 									<div style="background-image: url(images/gallery/' . $row["imgFullNameGallery"] . '); 	background-size:cover; min-height:200px;"></div>
 										<h3>' . $row["titleGallery"] . '</h3>
-										<p>' . $row["descGallery"] . '</p>
+										<p class="text-dark">' . $row["descGallery"] . '</p>
 								</a></div>';
 				}
 			}

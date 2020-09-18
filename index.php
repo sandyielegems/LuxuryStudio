@@ -10,7 +10,7 @@ include("includes/header-photo.php");
 include("includes/navbar.php");
 ?>
 
-<main class="text-center mt-4">
+<!-- <main class="text-center mt-4">
     <?php
     if (isset($_SESSION['userId'])) {
         echo '<p>U bent ingelogd</p>';
@@ -18,7 +18,7 @@ include("includes/navbar.php");
         echo '<p>U bent uitgelogd</p>';
     }
     ?>
-</main>
+</main> -->
 
 <?php
 include("login.php");

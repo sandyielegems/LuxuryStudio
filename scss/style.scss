@@ -6,8 +6,10 @@ sans-serif;
 $white: #fff;
 $black: #000;
 $darken: #4a5562;
+// $primary: #d19f9d;
 // $primary: #fa5bdd;
-$primary: #ecc5c3;
+// $primary: #ecc5c3;
+$primary: #d6a9a7;
 @mixin border-radius($radius) {
     -webkit-border-radius: $radius;
     -moz-border-radius: $radius;
@@ -934,9 +936,9 @@ h5,
 }
 
 input[type="time"]::-webkit-calendar-picker-indicator {
-    // background: none;
-    opacity: 0;
-    // background-color: white;
+    background: none;
+    // opacity: 0;
+    // color: white;
 }
 
 textarea.form-control {
