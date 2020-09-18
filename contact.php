@@ -10,5 +10,7 @@ if (isset($_POST['submit'])) {
     $txt = "U hebt een e-mail ontvangen van " . $name . ".\n\n" . $message;
 
     mail($mailTo, $subject, $txt, $headers);
-    header("Location: index.php?mailsend");
+    header("Location: index.php#contact?mailsend");
+    // echo "Uw bericht is verzonden";
+    // echo "<script type='text/javascript'>alert('Uw bericht is verstuurd');</script>";
 }
