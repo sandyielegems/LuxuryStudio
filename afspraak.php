@@ -58,7 +58,8 @@
                  </div>
 
                  <div class="form-group pt-4">
-                     <textarea name="opm" id="" cols="30" rows="3" class="form-control" placeholder="Opmerkingen"></textarea>
+                     <label class="text-white" for="opm">Opmerkingen</label>
+                     <textarea name="opm" id="" cols="30" rows="3" class="form-control"></textarea>
                  </div>
                  <div class="form-group">
                      <input type="submit" value="Afspraak aanvragen" class="btn btn-white btn-outline-white py-3 px-4">

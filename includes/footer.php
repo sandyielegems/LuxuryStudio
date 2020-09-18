@@ -13,47 +13,8 @@
                     </ul>
                 </div>
             </div>
-            <!-- <div class="col-md-4">
-                <div class="ftco-footer-widget mb-4">
-                    <h2 class="ftco-heading-2">Recent Blog</h2>
-                    <div class="block-21 mb-4 d-flex">
-                        <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
-                        <div class="text">
-                            <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
-                            <div class="meta">
-                                <div><a href="#"><span class="icon-calendar"></span> July 12, 2018</a></div>
-                                <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                                <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="block-21 mb-4 d-flex">
-                        <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);"></a>
-                        <div class="text">
-                            <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
-                            <div class="meta">
-                                <div><a href="#"><span class="icon-calendar"></span> July 12, 2018</a></div>
-                                <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                                <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-            <!-- <div class="col-md-2">
-                <div class="ftco-footer-widget mb-4 ml-md-4">
-                    <h2 class="ftco-heading-2">Spa Center</h2>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="py-2 d-block">Body Care</a></li>
-                        <li><a href="#" class="py-2 d-block">Massage</a></li>
-                        <li><a href="#" class="py-2 d-block">Hydrotherapy</a></li>
-                        <li><a href="#" class="py-2 d-block">Yoga</a></li>
-                        <li><a href="#" class="py-2 d-block">Sauna</a></li>
-                        <li><a href="#" class="py-2 d-block">Aquazone</a></li>
-                    </ul>
-                </div>
-            </div> -->
-            <div class="col-md-6">
+
+            <div class="col-md-4">
                 <div class="ftco-footer-widget mb-4">
                     <h2 class="ftco-heading-2">Luxury Studio</h2>
                     <div class="block-23 mb-3">
@@ -65,6 +26,35 @@
                     </div>
                 </div>
             </div>
+
+            <div class="col-md-4">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">Nog vragen?</h3>
+                        <form action="#" class="appointment-form">
+
+                            <div class="row form-group d-flex">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Naam">
+                                </div>
+                            </div>
+                            <div class="row form-group d-flex">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="E-mail">
+                                </div>
+                            </div>
+                            <div class="row form-group d-flex">
+                                <div class="col">
+                                    <textarea name=" opm" id="" cols="30" rows="3" class="form-control" placeholder="Stel hier uw vraag"></textarea>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <input type="submit" value="Verstuur" class="btn btn-white btn-outline-white py-3 px-4">
+                            </div>
+                        </form>
+
+                </div>
+            </div>
+
         </div>
 
 
