@@ -37,7 +37,7 @@
 				while ($row = mysqli_fetch_assoc($result)) {
 					echo '<div class="col-md-4 ftco-animate">
 							<a href="#" class="img-fluid">
-									<div style="background-image: url(images/gallery/' . $row["imgFullNameGallery"] . '); 	background-size:cover; min-height:200px;"></div>
+									<div style="background-image: url(images/gallery/' . $row["imgFullNameGallery"] . '); 	background-size:cover; min-height:300px;"></div>
 										<h3>' . $row["titleGallery"] . '</h3>
 										<p class="text-dark">' . $row["descGallery"] . '</p>
 								</a></div>';
@@ -47,3 +47,33 @@
 		</div>
 	</div>
 </section>
+<!-- 
+<img id="myImg" src="img_snow.jpg" alt="nails" style="width:100%;max-width:300px">
+<div id="myModal" class="modal">
+	<span class="close">&times;</span>
+	<img class="modal-content" id="img01">
+	<div id="caption"></div>
+</div> -->
+
+<!-- <script>
+	// Get the modal
+	var modal = document.getElementById("myModal");
+
+	// Get the image and insert it inside the modal - use its "alt" text as a caption
+	var img = document.getElementById("myImg");
+	var modalImg = document.getElementById("img01");
+	var captionText = document.getElementById("caption");
+	img.onclick = function() {
+		modal.style.display = "block";
+		modalImg.src = this.src;
+		captionText.innerHTML = this.alt;
+	}
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() {
+		modal.style.display = "none";
+	} -->
+<!-- </script> -->

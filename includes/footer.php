@@ -38,7 +38,7 @@
                                     <input type="text" class="form-control" name="mail" placeholder="E-mail">
                                     <input type="text" class="form-control" name="subject" placeholder="Onderwerp">
                                     <textarea class="form-control mt-3" name="message" placeholder="Stel hier uw vraag"></textarea>
-                                    <button type="submit" name="submit" class="btn btn-white btn-outline-white py-3 px-4 ml-2 mt-4">Verstuur</button>
+                                    <button type="submit" name="submit" class="btn btn-white btn-outline-white py-3 px-4 mt-4">Verstuur</button>
                                 </div>
                             </div>
                         </form>

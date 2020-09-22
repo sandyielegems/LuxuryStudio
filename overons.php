@@ -52,7 +52,7 @@
                     <div class="staff">
                         <div class="img mb-4" style="background-image: url(images/kristel.jpg);"></div>
                         <div class="info text-center">
-                            <h3><a href="teacher-single.html">Kristel Verpeet</a></h3>
+                            <h3>Kristel Verpeet</h3>
                             <span class="position">Nagelstyliste</span>
                             <div class="text">
                                 <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
