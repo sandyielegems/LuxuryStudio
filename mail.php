@@ -31,7 +31,7 @@ $mail->SMTPSecure = 'tls';
 $mail->Username = 'sandy.ielegems@gmail.com';
 
 /* SMTP authentication password. */
-$mail->Password = '79.S8nDy_69';
+$mail->Password = '???';
 
 /* Set the SMTP port. */
 $mail->Port = 587;

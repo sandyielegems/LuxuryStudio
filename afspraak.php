@@ -1,70 +1,9 @@
-<?php
-// echo "<pre>";
-// print_r($_POST);
-// echo "</pre>";
-
-$message_sent = false;
-
-
-if (isset($_POST['mail']) && $_POST['mail'] != '') {
-
-    if (filter_var($_POST['mail'], FILTER_VALIDATE_EMAIL)) {
-
-        $firstname = $_POST['firstname'];
-        $lastname = $_POST['lastname'];
-        $tel = $_POST['tel'];
-        $mailFrom = $_POST['email'];
-        $date = $_POST['date'];
-        $hour = $_POST['hour'];
-        // radio buttons 
-        $behandeling = $_POST['behandeling'];
-        $message = $_POST['message'];
-        $mailTo = "sandy.ielegems@gmail.com";
-        $body = "";
-
-        $txt .= "U hebt een e-mail ontvangen van " . $firstname . " " . $lastname . ".\n\n" . $message . "wenst een afspraak op " . $date . " om " . $hour . ".\n\n" . "voor " . $behandeling;
-
-        mail($mailTo, $txt);
-        header("Location: index.php#afspraak?mailsend");
-
-        $message_sent = true;
-    } else {
-        $invalid_class_name = "form-invalid";
-    }
-}
-
-?>
-<!-- 
-<?php
-if ($message_sent);
-echo "Uw afspraak is aangevraagd"
-?> -->
-
-
-<?php
-// PHP program to pop an alert 
-// message box on the screen 
-
-// Function defnition 
-if ($message_sent);
-
-function function_alert($message)
-{
-    // Display the alert box  
-    echo "<script>alert('$message');</script>";
-}
-
-// Function call 
-function_alert("Uw afspraak is aangevraagd");
-?>
-
-
 <section class="ftco-section ftco-appointment">
     <div class="overlay"></div>
     <div class="container">
         <div class="col-md appointment pl-md-5 ftco-animate">
             <h3 class="mb-3">AFSPRAAK MAKEN</h3>
-            <form action="index.php#afspraak" class="appointment-form" method="post">
+            <form action="includes/afspraak.inc.php" class="appointment-form" method="post">
 
                 <div class="row form-group d-flex">
                     <div class="col-md-6">
@@ -125,7 +64,7 @@ function_alert("Uw afspraak is aangevraagd");
                 <div class="form-group">
                     <button type="submit" name="submit" class="btn btn-white btn-outline-white py-3 px-4">Afspraak aanvragen</button>
                 </div>
-                <div class="text-white">U zal een e-mail ontvangen met de bevestiging.</div>
+                <!-- <div class="text-white">U zal een e-mail ontvangen met de bevestiging.</div> -->
             </form>
         </div>
     </div>

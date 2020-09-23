@@ -3,7 +3,6 @@
 		<div class="row justify-content-center mb-5 pb-3">
 			<div class="col-md-7 heading-section text-center ftco-animate">
 				<h2 class="mb-1">Foto's</h2>
-				<p class="button text-center mt-4"><a href="gallery-single.php" class="btn btn-primary btn-outline-primary px-4 py-3">Meer foto's</a></p>
 			</div>
 		</div>
 
@@ -27,7 +26,7 @@
 			<?php
 			include_once 'includes/dbh.inc.php';
 
-			$sql = "SELECT * FROM gallery ORDER BY orderGallery DESC;";
+			$sql = "SELECT * FROM gallery ORDER BY orderGallery DESC LIMIT 3;";
 			$stmt = mysqli_stmt_init($conn);
 			if (!mysqli_stmt_prepare($stmt, $sql)) {
 				echo "SQL statement failed";
@@ -36,17 +35,17 @@
 				$result = mysqli_stmt_get_result($stmt);
 
 				while ($row = mysqli_fetch_assoc($result)) {
-					echo '<div class="col-md-4 ftco-animate">
-							<a href="#" class="img-fluid">
+					echo '<div class="col-md-4 ftco-animate img-fluid">
 									<div style="background-image: url(images/gallery/' . $row["imgFullNameGallery"] . '); 	background-size:cover; min-height:400px;"></div>
-										<h3>' . $row["titleGallery"] . '</h3>
+										<h5>' . $row["titleGallery"] . '</h5>
 										<p class="text-dark">' . $row["descGallery"] . '</p>
-								</a></div>';
+								</div>';
 				}
 			}
 			?>
 		</div>
 	</div>
+	<p class="button text-center mt-4"><a href="gallery-single.php" class="btn btn-primary btn-outline-primary px-4 py-3">Meer foto's</a></p>
 </section>
 <!-- 
 <img id="myImg" src="img_snow.jpg" alt="nails" style="width:100%;max-width:300px">

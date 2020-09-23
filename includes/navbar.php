@@ -8,10 +8,10 @@
         <div class="collapse navbar-collapse" id="ftco-nav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="index.php#promo" class="nav-link">PROMO</a></li>
-                <li class="nav-item"><a href="index.php#gallery" class="nav-link">Foto's</a></li>
+                <!-- <li class="nav-item"><a href="index.php#promo" class="nav-link">PROMO</a></li> -->
+                <li class="nav-item"><a href="gallery-single.php#fotos" class="nav-link">Foto's</a></li>
                 <li class="nav-item"><a href="index.php#prijzen" class="nav-link">Prijzen</a></li>
-                <!-- <li class="nav-item"><a href="blog.php" class="nav-link">Blog</a></li> -->
+                <li class="nav-item"><a href="index.php#afspraak" class="nav-link">Afspraak</a></li>
                 <li class="nav-item"><a href="index.php#contact" class="nav-link">Contact</a></li>
                 <!-- <li class="nav-item"><a href="login.php" class="nav-link">Login</a></li> -->
                 <!-- <button type="submit" name="login-submit">Login</button> -->

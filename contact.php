@@ -12,5 +12,5 @@ if (isset($_POST['submit'])) {
     mail($mailTo, $subject, $txt, $headers);
     header("Location: index.php#contact?mailsend");
     // echo "Uw bericht is verzonden";
-    // echo "<script type='text/javascript'>alert('Uw bericht is verstuurd');</script>";
+    print("<script>window.alert('Uw bericht is verzonden.');</script>");
 }
