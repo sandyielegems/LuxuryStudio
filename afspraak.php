@@ -14,15 +14,18 @@ if (isset($_POST['mail']) && $_POST['mail'] != '') {
         $lastname = $_POST['lastname'];
         $tel = $_POST['tel'];
         $mailFrom = $_POST['email'];
+        $date = $_POST['date'];
+        $hour = $_POST['hour'];
+        // radio buttons 
+        $behandeling = $_POST['behandeling'];
         $message = $_POST['message'];
-
         $mailTo = "sandy.ielegems@gmail.com";
         $body = "";
 
-        $txt .= "U hebt een e-mail ontvangen van " . $firstname . " " . $lastname . ".\n\n" . $message;
+        $txt .= "U hebt een e-mail ontvangen van " . $firstname . " " . $lastname . ".\n\n" . $message . "wenst een afspraak op " . $date . " om " . $hour . ".\n\n" . "voor " . $behandeling;
 
-        // mail($mailTo, $message, $txt);
-        // header("Location: index.php#afspraak?mailsend");
+        mail($mailTo, $txt);
+        header("Location: index.php#afspraak?mailsend");
 
         $message_sent = true;
     } else {
@@ -34,10 +37,26 @@ if (isset($_POST['mail']) && $_POST['mail'] != '') {
 <!-- 
 <?php
 if ($message_sent);
-?>
+echo "Uw afspraak is aangevraagd"
+?> -->
 
-<h3>Thanks, we will contact you</h3>
- -->
+
+<?php
+// PHP program to pop an alert 
+// message box on the screen 
+
+// Function defnition 
+if ($message_sent);
+
+function function_alert($message)
+{
+    // Display the alert box  
+    echo "<script>alert('$message');</script>";
+}
+
+// Function call 
+function_alert("Uw afspraak is aangevraagd");
+?>
 
 
 <section class="ftco-section ftco-appointment">
@@ -85,17 +104,17 @@ if ($message_sent);
                 <!-- radio buttons  -->
                 <div class="form-check pt-4">
                     <label class="form-check-label text-white">
-                        <input type="radio" class="form-check-input" name="optradio">Behandeling 1 - manicure
+                        <input type="radio" class="form-check-input" name="optradio">Behandeling 1 - manicure en nagellak
                     </label>
                 </div>
                 <div class="form-check">
                     <label class="form-check-label text-white">
-                        <input type="radio" class="form-check-input" name="optradio">Behandeling 2 - gelnagels plaatsing
+                        <input type="radio" class="form-check-input" name="optradio">Behandeling 2 - manicure en gelnagels
                     </label>
                 </div>
                 <div class="form-check">
                     <label class="form-check-label text-white">
-                        <input type="radio" class="form-check-input" name="optradio">Behandeling 3 - gelnagels bijwerken
+                        <input type="radio" class="form-check-input" name="optradio">Behandeling 3 - frezen en gelnagels
                     </label>
                 </div>
 

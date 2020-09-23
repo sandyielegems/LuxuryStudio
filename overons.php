@@ -9,32 +9,14 @@
                         </div>
                         <div class="media-body">
                             <h3 class="heading">Over ons</h3>
-                            <p>Verzorgde handen en nagels zijn ons visitekaartje. De dagelijkse verzorging van uw uiterlijk is een must als moderne vrouw. Ook uw handen en voeten verdienen daarbij uw aandacht. Verzorgde handen en voeten zijn immers een blikvanger. </p>
-                            <p>Spijtig genoeg zijn sterke nagels niet aan iedereen gegund. Als hulp om nagels te verstevigen, om van het nagelbijten af te komen of natuurlijk gewoon mooie nagels te hebben, kan je bij nagelstudio LUXURY STUDIO terecht. </p>
-                            <!-- <p>Gels bestaan in verschillende kleuren en afwerkingen en bieden flexibiliteit en stevigheid zodat lakken overbodig wordt en er weinig verzorging van je nagels meer nodig is.</p>
-                            <p>Wij hebben een ruim assortiment aan kleuren en stemmen ons assortiment af op de laatste seizoenskleuren.</p>
-                            <p> Voor een extra personal touch is er ook nog onze nail art. Wij volgen de laatste trends en technieken om van uw nagels echte pareltjes te maken.</p> -->
+                            <p>De passie is nooit verdwenen ...</p>
+                            <p>En plotseling kwam er uit onverwachte hoek iemand op mijn pad, die mij het nodige duwtje gaf. <br>
+                                Na de nodige bijscholing, sta ik terug in de startblokken om mijn spiksplinternieuwe nagelstudio te openen.</p>
+                            <p>Ik kijk er naar uit om jullie verwelkomen bij LUXURY STUDIO, passion for nails.</p><br>
+                            <p><i>met dank aan mijn liefste schatje en mijn promo-team!</i></p>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-md-4 ftco-animate">
-                    <div class="media d-block text-center block-6 services">
-                        <div class="icon d-flex mb-3"><span class="flaticon-cosmetics"></span></div>
-                        <div class="media-body">
-                            <h3 class="heading">Makeup Pro</h3>
-                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 ftco-animate">
-                    <div class="media d-block text-center block-6 services">
-                        <div class="icon d-flex mb-3"><span class="flaticon-curl"></span></div>
-                        <div class="media-body">
-                            <h3 class="heading">Hair Style</h3>
-                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
     </section>
@@ -42,24 +24,23 @@
     <section class="ftco-section bg-light">
         <div class="container">
             <div class="row justify-content-center mb-5 pb-3">
-                <div class="col-md-7 heading-section ftco-animate text-center">
-                    <!-- <h2 class="mb-4">Nagelstyliste</h2> -->
-                    <!-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p> -->
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-6 d-flex mb-sm-4 ftco-animate">
-                    <div class="staff">
-                        <div class="img mb-4" style="background-image: url(images/kristel.jpg);"></div>
-                        <div class="info text-center">
-                            <h3>Kristel Verpeet</h3>
-                            <span class="position">Nagelstyliste</span>
-                            <div class="text">
-                                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <div class="col-md-8 heading-section ftco-animate text-center">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 d-flex mb-sm-4 ftco-animate">
+                            <div class="staff">
+                                <div class="img mb-4" style="background-image: url(images/kristel.jpg);"></div>
+                                <div class="info text-center">
+                                    <h3>Kristel Verpeet</h3>
+                                    <span class="position">Nagelstyliste</span>
+                                    <div class="text">
+                                        <p>My passion for nails gives you a luxury style!</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
 
                 <!-- <div class="col-lg-3 d-flex mb-sm-4 ftco-animate">
                     <div class="staff">

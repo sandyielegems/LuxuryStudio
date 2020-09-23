@@ -7,7 +7,7 @@ include("includes/navbar.php");
 ?>
 
 <main>
-    <div>
+    <div class="text-center">
         <section>
             <h3 class="text-center">Signup</h3>
             <?php
@@ -26,7 +26,7 @@ include("includes/navbar.php");
                     echo '<p>Username bestaat al</p>';
                 }
             } else if ($_GET['signup'] == "success") {
-                echo '<p>U bent succesvol ingelogd</p>';
+                echo '<p>Uw account is succesvol aangemaakt en u bent ingelogd</p>';
             }
             ?>
             <form action="includes/signup.inc.php" method="post">

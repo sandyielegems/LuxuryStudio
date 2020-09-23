@@ -3,6 +3,7 @@
 		<div class="row justify-content-center mb-5 pb-3">
 			<div class="col-md-7 heading-section text-center ftco-animate">
 				<h2 class="mb-1">Foto's</h2>
+				<p class="button text-center mt-4"><a href="gallery-single.php" class="btn btn-primary btn-outline-primary px-4 py-3">Meer foto's</a></p>
 			</div>
 		</div>
 
@@ -37,7 +38,7 @@
 				while ($row = mysqli_fetch_assoc($result)) {
 					echo '<div class="col-md-4 ftco-animate">
 							<a href="#" class="img-fluid">
-									<div style="background-image: url(images/gallery/' . $row["imgFullNameGallery"] . '); 	background-size:cover; min-height:300px;"></div>
+									<div style="background-image: url(images/gallery/' . $row["imgFullNameGallery"] . '); 	background-size:cover; min-height:400px;"></div>
 										<h3>' . $row["titleGallery"] . '</h3>
 										<p class="text-dark">' . $row["descGallery"] . '</p>
 								</a></div>';
