@@ -32,7 +32,7 @@
             <div class="col-md-4">
                 <div class="ftco-footer-widget mb-4">
                     <h2 class="ftco-heading-2">Nog vragen?</h2>
-                    <form action="contact.php" class="appointment-form" method="post">
+                    <form action="includes/contact.inc.php" class="appointment-form" method="post">
 
                         <div class="row form-group d-flex">
                             <div class="col">
@@ -57,7 +57,7 @@
                     <small class="text-muted">
                         Copyright &copy;<script>
                             document.write(new Date().getFullYear());
-                        </script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a><br><a href="mailto:sandy.ielegems@gmail.com"> Edited bij Sandy Ielegems</a>
+                        </script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a><br><a href="mailto:sandy.ielegems@gmail.com"> Edited by Sandy Ielegems</a>
                     </small>
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 </p>

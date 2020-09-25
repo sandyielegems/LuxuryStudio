@@ -25,8 +25,10 @@ include("includes/navbar.php");
                 } else if ($_GET['error'] == "usertaken") {
                     echo '<p>Username bestaat al</p>';
                 }
-            } else if ($_GET['signup'] == "success") {
-                echo '<p>Uw account is succesvol aangemaakt en u bent ingelogd</p>';
+            } else if (isset($_GET['signup']) && $_GET['signup'] == "success") {
+                echo
+                    '<p>Uw account is succesvol aangemaakt.</p>
+                <a href="index.php?signup=success" class="btn btn-primary btn-outline-primary px-4 py-3 mb-4">Terug naar de homepage om in te loggen</a>';
             }
             ?>
             <form action="includes/signup.inc.php" method="post">

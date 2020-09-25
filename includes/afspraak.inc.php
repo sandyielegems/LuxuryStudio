@@ -15,16 +15,17 @@ if (isset($_POST['submit']) && $_POST['submit'] != '') {
         $mailFrom = $_POST['email'];
         $date = $_POST['date'];
         $hour = $_POST['hour'];
-        // radio buttons 
+        // radio buttons > hoe in de mail?
         $behandeling = $_POST['behandeling'];
         $message = $_POST['message'];
-        $mailTo = "sandy.ielegems@gmail.com";
+        $mailTo = "luxury.studio.1840@gmail.com";
         $body = "";
 
         $txt .= "U hebt een e-mail ontvangen van " . $firstname . " " . $lastname . " telnr " . $tel . " met emailadres " . $mailFrom . ".\n\n" . $message . "wenst een afspraak op " . $date . " om " . $hour . ".\n\n" . "voor " . $behandeling;
 
-        mail($mailTo, $txt);
-        header("Location: index.php#afspraak?mailsend");
+        // fout hier?
+        mail($mailTo, $txt, $message);
+        header("Location: ../index.php#afspraak?mailsend");
 
         $message_sent = true;
         print("<script>window.alert('Uw afspraak is aangevraagd. Kijk uw mailbox na.');</script>");

@@ -1,12 +1,7 @@
 <?php
+
 include("includes/header.php");
-?>
-
-<?php
 include("includes/header-photo.php");
-?>
-
-<?php
 include("includes/navbar.php");
 ?>
 
@@ -22,9 +17,7 @@ include("includes/navbar.php");
 
 <?php
 include("login.php");
-?>
 
-<?php
 include("overons.php");
 ?>
 
@@ -50,5 +43,10 @@ include("afspraak.php");
 
 <a name="contact"></a>
 <?php
+
+if (isset($_GET["mailsend"]) && $_GET["mailsend"] == "success") {
+    print("<script>window.alert('Uw bericht is verzonden.');</script>");
+}
+
 include("includes/footer.php");
 ?>
