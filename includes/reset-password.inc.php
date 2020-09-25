@@ -26,13 +26,11 @@ if (isset($_POST["reset-password-submit"])) {
         echo "Er is een fout opgetreden";
         exit();
     } else {
-        // FOUTMELDING: mysqli_stmt_bind_param(): Number of elements in type definition string doesn't match number of bind variables
-        mysqli_stmt_bind_param($stmt, "s", $selector);
+        mysqli_stmt_bind_param($stmt, "ss", $selector, $currentDate);
         mysqli_stmt_execute($stmt);
 
-        // FOUTMELDING: mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given
         $result = mysqli_stmt_get_result($stmt);
-        if (!$row = mysqli_fetch_assoc($result)) {
+        if (empty($row = mysqli_fetch_assoc($result))) {
             echo "Herbevestig uw reset aanvraag. - fout 1";
             exit();
         } else {
@@ -77,7 +75,7 @@ if (isset($_POST["reset-password-submit"])) {
                             } else {
                                 mysqli_stmt_bind_param($stmt, "s", $tokenEmail);
                                 mysqli_stmt_execute($stmt);
-                                header("Location: ../login.php?newpwd=passwordupdated");
+                                header("Location: ../index.php?newpwd=passwordupdated");
                             }
                         }
                     }

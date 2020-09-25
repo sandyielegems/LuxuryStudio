@@ -6,7 +6,7 @@ if (isset($_POST["reset-request-submit"])) {
 
     $url = "http://localhost/php/LuxuryStudio/create-new-password.php?selector=" . $selector . "&validator=" . bin2hex($token);
 
-    $expires = date("U") + 1;
+    $expires = date("U") + 1800000;
 
     require 'dbh.inc.php';
 
@@ -47,7 +47,7 @@ if (isset($_POST["reset-request-submit"])) {
     $headers .= "Reply-To: luxury.studio.1840@gmail.com\r\n";
     $headers .= "Content-type: text/html\r\n";
 
-    require_once('../mail.php');
+    require_once('mail.php');
 
     $mail->setFrom("luxury.studio.1840@gmail.com");
     $mail->addAddress($userEmail, $name);

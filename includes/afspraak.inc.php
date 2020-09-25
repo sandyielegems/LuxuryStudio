@@ -12,7 +12,8 @@ if (isset($_POST['submit-app'])) {
     // $form_message = $_POST['optradio1'];
     // $form_message = $_POST['optradio2'];
     // $form_message = $_POST['optradio3'];
-    // $message = $_POST['message'];
+    $message = $_POST['message'];
+    var_dump($_POST);
 
     require_once('mail.php');
 
@@ -29,10 +30,7 @@ if (isset($_POST['submit-app'])) {
     $mail->addAddress('luxury.studio.1840@gmail.com');
     $mail->addCC($mailfrom);
     $mail->Subject = 'Afspraak aanvraag';
-    $mail->Body = $date;
-    $mail->Body = $hour;
-    // $mail->Body = $form_message;
-    // $mail->Body = $message;
+    $mail->Body = $date . " om " . $hour . " bericht: " . $message;
 
     $mail->send();
 
@@ -41,6 +39,11 @@ if (isset($_POST['submit-app'])) {
     }
 }
 
+
+// $mail->Body = $date . " om " . ;
+//     $mail->Body = $hour;
+//     // $mail->Body = $form_message;
+//     $mail->Body = $message;
 
 
 // $message_sent = false;
