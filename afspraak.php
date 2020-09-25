@@ -43,23 +43,23 @@
                 <!-- radio buttons  -->
                 <div class="form-check pt-4">
                     <label class="form-check-label text-white">
-                        <input type="radio" class="form-check-input" name="optradio">Behandeling 1 - manicure en nagellak
+                        <input type="radio" class="form-check-input" name="optradio1">Behandeling 1 - manicure en nagellak
                     </label>
                 </div>
                 <div class="form-check">
                     <label class="form-check-label text-white">
-                        <input type="radio" class="form-check-input" name="optradio">Behandeling 2 - manicure en gelnagels
+                        <input type="radio" class="form-check-input" name="optradio2">Behandeling 2 - manicure en gelnagels
                     </label>
                 </div>
                 <div class="form-check">
                     <label class="form-check-label text-white">
-                        <input type="radio" class="form-check-input" name="optradio">Behandeling 3 - frezen en gelnagels
+                        <input type="radio" class="form-check-input" name="optradio2">Behandeling 3 - frezen en gelnagels
                     </label>
                 </div>
 
                 <div class="form-group pt-4">
-                    <label class="text-white" for="message">Opmerkingen</label>
-                    <textarea name="opm" id="" cols="30" rows="3" class="form-control" name="message"></textarea>
+                    <label class="text-white" for="message">Bericht</label>
+                    <textarea name="opm" cols="30" rows="3" class="form-control" name="message"></textarea>
                 </div>
                 <div class="form-group">
                     <button type="submit" name="submit-app" class="btn btn-white btn-outline-white py-3 px-4">Afspraak aanvragen</button>

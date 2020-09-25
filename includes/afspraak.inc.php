@@ -9,7 +9,9 @@ if (isset($_POST['submit-app'])) {
     $date = $_POST['date'];
     $hour = $_POST['hour'];
     // radio buttons > hoe in de mail?
-    // $behandeling = $_POST['behandeling'];
+    // $form_message = $_POST['optradio1'];
+    // $form_message = $_POST['optradio2'];
+    // $form_message = $_POST['optradio3'];
     // $message = $_POST['message'];
 
     require_once('mail.php');
@@ -29,7 +31,7 @@ if (isset($_POST['submit-app'])) {
     $mail->Subject = 'Afspraak aanvraag';
     $mail->Body = $date;
     $mail->Body = $hour;
-    // $mail->Body = $behandeling;
+    // $mail->Body = $form_message;
     // $mail->Body = $message;
 
     $mail->send();
