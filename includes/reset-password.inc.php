@@ -31,7 +31,7 @@ if (isset($_POST["reset-password-submit"])) {
 
         $result = mysqli_stmt_get_result($stmt);
         if (empty($row = mysqli_fetch_assoc($result))) {
-            echo "Herbevestig uw reset aanvraag. - fout 1";
+            echo "Herbevestig uw reset aanvraag. De link om te resetten is verlopen.";
             exit();
         } else {
             $tokenBin = hex2bin($validator);

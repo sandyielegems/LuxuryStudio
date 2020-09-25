@@ -1,15 +1,13 @@
 <?php
 include("includes/header.php");
-?>
 
-<?php
 include("includes/navbar.php");
 ?>
 
 <main>
     <div class="text-center">
         <section>
-            <h3 class="text-center">Registreer</h3>
+            <h3 class="text-center mt-4">Registreer</h3>
 
             <?php
             if (isset($_GET['error'])) {
@@ -29,7 +27,7 @@ include("includes/navbar.php");
             } else if (isset($_GET['signup']) && $_GET['signup'] == "success") {
                 echo
                     '<p>Uw account is succesvol aangemaakt.</p>
-                <a href="index.php?signup=success" class="btn btn-primary btn-outline-primary px-4 py-3 mb-4">Terug naar de homepage om in te loggen</a>';
+                <a href="index.php?signup=success" class="btn btn-primary btn-outline-primary px-4 py-3 mb-4">Ga terug naar de homepage om in te loggen</a>';
             }
             ?>
 
@@ -39,7 +37,7 @@ include("includes/navbar.php");
                     <input class="mb-3" type="text" name="mail" placeholder="E-mail"><br>
                     <input class="mb-3" type="password" name="pwd" placeholder="Wachtwoord"><br>
                     <input class="mb-3" type="password" name="pwd-repeat" placeholder="Herhaal wachtwoord"><br>
-                    <button class="btn btn-primary btn-outline-primary px-4 py-3" type="submit" name="signup-submit">Registreer</button>
+                    <button class="btn btn-primary" type="submit" name="signup-submit">Registreer</button>
                 </p>
             </form>
 

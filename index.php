@@ -1,7 +1,8 @@
 <?php
-
 include("includes/header.php");
+
 include("includes/header-photo.php");
+
 include("includes/navbar.php");
 ?>
 
@@ -38,7 +39,6 @@ include("prijzen.php");
 
 <a name="afspraak"></a>
 <?php
-
 if (isset($_GET["appsend"]) && $_GET["appsend"] == "success") {
     print("<script>window.alert('Uw afspraak is aangevraagd.');</script>");
 }
@@ -48,7 +48,6 @@ include("afspraak.php");
 
 <a name="contact"></a>
 <?php
-
 if (isset($_GET["mailsend"]) && $_GET["mailsend"] == "success") {
     print("<script>window.alert('Uw bericht is verzonden.');</script>");
 }

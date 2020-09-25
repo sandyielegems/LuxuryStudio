@@ -20,7 +20,7 @@ if (isset($_POST['submit-contact'])) {
     $mail->addAddress('luxury.studio.1840@gmail.com');
     $mail->addCC($mailfrom);
     $mail->Subject = $subject;
-    $mail->Body = $message;
+    $mail->Body = "Van: " . $name . "\r\nE-mailadres: " . $mailfrom . "\r\nOnderwerp: " . $subject . "\r\nBericht: "  . $message;
 
     $mail->send();
 

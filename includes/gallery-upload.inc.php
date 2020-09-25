@@ -70,6 +70,4 @@ if (isset($_POST['submit'])) {
         echo "Selecteer een juiste filetype";
         exit();
     }
-
-    // print_r($file);
 }
