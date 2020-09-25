@@ -38,6 +38,11 @@ include("prijzen.php");
 
 <a name="afspraak"></a>
 <?php
+
+if (isset($_GET["appsend"]) && $_GET["appsend"] == "success") {
+    print("<script>window.alert('Uw afspraak is aangevraagd.');</script>");
+}
+
 include("afspraak.php");
 ?>
 

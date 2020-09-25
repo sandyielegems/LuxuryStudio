@@ -1,4 +1,3 @@
-<!-- prijzen  -->
 <section class="ftco-section">
     <div class="container">
         <div class="row justify-content-center mb-5 pb-3">
@@ -22,6 +21,7 @@
                     <p class="button text-center"><a href="index.php#afspraak" class="btn btn-primary btn-outline-primary px-4 py-3">Afspraak aanvragen</a></p>
                 </div>
             </div>
+
             <div class="col-md-4 ftco-animate">
                 <div class="pricing-entry pb-5 text-center">
                     <div>
@@ -36,6 +36,7 @@
                     <p class="button text-center"><a href="index.php#afspraak" class="btn btn-primary btn-outline-primary px-4 py-3">Afspraak aanvragen</a></p>
                 </div>
             </div>
+
             <div class="col-md-4 ftco-animate">
                 <div class="pricing-entry pb-5 text-center">
                     <div>

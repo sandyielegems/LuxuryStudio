@@ -1,69 +1,85 @@
 <?php
-// echo "<pre>";
-// print_r($_POST);
-// echo "</pre>";
 
-$message_sent = false;
+if (isset($_POST['submit-app'])) {
 
-if (isset($_POST['submit']) && $_POST['submit'] != '') {
+    $firstname = $_POST['firstname'];
+    $lastname = $_POST['lastname'];
+    $tel = $_POST['tel'];
+    $mailfrom = $_POST['mail'];
+    $date = $_POST['date'];
+    $hour = $_POST['hour'];
+    // radio buttons > hoe in de mail?
+    // $behandeling = $_POST['behandeling'];
+    // $message = $_POST['message'];
 
-    if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+    require_once('mail.php');
 
-        $firstname = $_POST['firstname'];
-        $lastname = $_POST['lastname'];
-        $tel = $_POST['tel'];
-        $mailFrom = $_POST['email'];
-        $date = $_POST['date'];
-        $hour = $_POST['hour'];
-        // radio buttons > hoe in de mail?
-        $behandeling = $_POST['behandeling'];
-        $message = $_POST['message'];
-        $mailTo = "luxury.studio.1840@gmail.com";
-        $body = "";
+    $mail->isSMTP();
+    $mail->Host = 'smtp.gmail.com';
+    $mail->SMTPAuth = TRUE;
+    $mail->SMTPSecure = 'tls';
+    $mail->Username = 'luxury.studio.1840@gmail.com';
+    $mail->Password = 'luxury.studio.1840_KRISTEL';
+    $mail->Port = 587;
 
-        $txt .= "U hebt een e-mail ontvangen van " . $firstname . " " . $lastname . " telnr " . $tel . " met emailadres " . $mailFrom . ".\n\n" . $message . "wenst een afspraak op " . $date . " om " . $hour . ".\n\n" . "voor " . $behandeling;
+    $mail->setFrom($mailfrom, $firstname, $lastname);
+    $mail->addReplyTo($mailfrom);
+    $mail->addAddress('luxury.studio.1840@gmail.com');
+    $mail->addCC($mailfrom);
+    $mail->Subject = 'Afspraak aanvraag';
+    $mail->Body = $date;
+    $mail->Body = $hour;
+    // $mail->Body = $behandeling;
+    // $mail->Body = $message;
 
-        // fout hier?
-        mail($mailTo, $txt, $message);
-        header("Location: ../index.php#afspraak?mailsend");
+    $mail->send();
 
-        $message_sent = true;
-        print("<script>window.alert('Uw afspraak is aangevraagd. Kijk uw mailbox na.');</script>");
-    } else {
-        $invalid_class_name = "form-invalid";
+    if ($mail == true) {
+        header("Location: ../index.php?appsend=success");
     }
 }
 
 
-?>
-<!-- 
-<?php
-if ($message_sent);
-echo "Uw afspraak is aangevraagd"
-?> -->
 
+// $message_sent = false;
 
-<!-- 
-<?php
-if ($message_sent);
-print("<script>window.alert('Uw afspraak is aangevraagd. Kijk uw mailbox na.');</script>");
-?> -->
+// if (isset($_POST['submit-app']) && $_POST['submit-app'] != '') {
 
+//     if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
 
-<!-- 
-<?php
-// PHP program to pop an alert 
-// message box on the screen 
+//         $firstname = $_POST['firstname'];
+//         $lastname = $_POST['lastname'];
+//         $tel = $_POST['tel'];
+//         $mailfrom = $_POST['mail'];
+//         $date = $_POST['date'];
+//         $hour = $_POST['hour'];
+//         // radio buttons > hoe in de mail?
+//         $behandeling = $_POST['behandeling'];
+//         $message = $_POST['message'];
 
-// Function defnition 
-if ($message_sent);
+//         require_once('mail.php');
 
-function function_alert($message)
-{
-    // Display the alert box  
-    echo "<script>alert('$message');</script>";
-}
+//         $mail->isSMTP();
+//         $mail->Host = 'smtp.gmail.com';
+//         $mail->SMTPAuth = TRUE;
+//         $mail->SMTPSecure = 'tls';
+//         $mail->Username = 'luxury.studio.1840@gmail.com';
+//         $mail->Password = 'luxury.studio.1840_KRISTEL';
+//         $mail->Port = 587;
 
-// Function call 
-function_alert("Uw afspraak is aangevraagd");
-?> -->
+//         $mail->setFrom($mailfrom, $firstname, $lastname);
+//         $mail->addReplyTo($mailfrom);
+//         $mail->addAddress('luxury.studio.1840@gmail.com');
+//         $mail->Subject = 'Afspraak aanvraag';
+//         $mail->Body = $date;
+//         $mail->Body = $hour;
+//         $mail->Body = $behandeling;
+//         $mail->Body = $message;
+
+//         $mail->send();
+
+//         if ($mail == true) {
+//             header("Location: ../index.php?appsend=success");
+//         }
+//     }
+// }

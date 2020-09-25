@@ -7,11 +7,11 @@
         } else {
             echo
                 '<form action="includes/login.inc.php" method="post">
-            <p class="button text-center mt-4"><input type="text" name="mailuid" placeholder="Username of e-mail">
+            <p class="button text-center mt-4"><input type="text" name="mailuid" placeholder="E-mail of gebruikersnaam">
             <input type="password" name="pwd" placeholder="Wachtwoord">
             <button class="btn btn-primary" type="submit" name="login-submit">Login</button>
             </form>
-            <a href="signup.php" class="nav-link text-center">Nog geen login? Signup</a></p>
+            <a href="signup.php" class="nav-link text-center">Nog geen login? Registreer hier</a></p>
 
             <a href="reset-password.php" class="nav-link text-center">Wachtwoord vergeten?</a>';
 
@@ -21,9 +21,6 @@
                 }
             }
         }
-
         ?>
-
-
     </div>
 </header>

@@ -14,7 +14,7 @@ include("includes/navbar.php");
                 <p>Een e-mail zal u verzonden worden met instructies hoe u uw wachtwoord kan resetten.</p>
 
                 <form action="includes/reset-request.inc.php" method="post" class="mb-5">
-                    <input type="text" name="email" placeholder="e-mailadres">
+                    <input type="text" name="email" placeholder="E-mail">
                     <button class="btn btn-primary" type="submit" name="reset-request-submit">Ontvang uw nieuw wachtwoord per mail</button>
                 </form>
 
@@ -24,9 +24,7 @@ include("includes/navbar.php");
                         echo '<p class="signupsucces">Check uw mailbox!</p>';
                     }
                 }
-
                 ?>
-
             </section>
         </div>
     </div>

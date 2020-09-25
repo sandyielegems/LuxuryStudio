@@ -21,21 +21,21 @@
                     </div>
                     <div class="col-md-6">
                         <label class="text-white" for="email">E-mail</label>
-                        <input <?php $invalid_class_name ?? "" ?> type="email" class="form-control" name="email">
+                        <input <?php $invalid_class_name ?? "" ?> type="email" class="form-control" name="mail">
                     </div>
 
                     <div class="col-md-6">
                         <div class="input-wrap">
                             <label class="text-white" for="date">Datum</label>
                             <div class="icon"><span class="ion-md-calendar"></span></div>
-                            <input type="text" id="appointment_date" class="form-control">
+                            <input type="text" id="appointment_date" class="form-control" name="date">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="input-wrap">
                             <label class="text-white" for="hour">Gewenste uur</label>
                             <div class="icon"><span class="ion-md-time"></span></div>
-                            <input type="time" id="default-picker" class="form-control">
+                            <input type="time" id="default-picker" class="form-control" name="hour">
                         </div>
                     </div>
                 </div>
@@ -58,11 +58,11 @@
                 </div>
 
                 <div class="form-group pt-4">
-                    <label class="text-white" for="opm">Opmerkingen</label>
+                    <label class="text-white" for="message">Opmerkingen</label>
                     <textarea name="opm" id="" cols="30" rows="3" class="form-control" name="message"></textarea>
                 </div>
                 <div class="form-group">
-                    <button type="submit" name="submit" class="btn btn-white btn-outline-white py-3 px-4">Afspraak aanvragen</button>
+                    <button type="submit" name="submit-app" class="btn btn-white btn-outline-white py-3 px-4">Afspraak aanvragen</button>
                 </div>
                 <!-- <div class="text-white">U zal een e-mail ontvangen met de bevestiging.</div> -->
             </form>

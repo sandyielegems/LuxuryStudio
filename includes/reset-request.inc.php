@@ -40,10 +40,10 @@ if (isset($_POST["reset-request-submit"])) {
 
     $to = $userEmail;
     $subject = "Reset uw wachtwoord voor Luxury Studio";
-    $message = "We hebben een wachtwoord reset aanvraag ontvangen. De link vindt u hieronder. Indien u dit niet aangevraagd hebt, gelieve deze email te negeren." . "<br>";
-    $message .= "Hier is de reset link:" . "<br>";
-    $message .= "<a href= ' . $url . '</a>";
-    $headers = "From: Luxury Studio <luxury.studio.1840@gmail.com\r\n";
+    $message = "We hebben een wachtwoord reset aanvraag ontvangen. De link vindt u hieronder. Indien u dit niet aangevraagd hebt, gelieve deze email te negeren.\r\n";
+    $message .= "Hier is de reset link: \r\n";
+    $message .= $url;
+    $headers = "From: Luxury Studio luxury.studio.1840@gmail.com\r\n";
     $headers .= "Reply-To: luxury.studio.1840@gmail.com\r\n";
     $headers .= "Content-type: text/html\r\n";
 
@@ -52,7 +52,7 @@ if (isset($_POST["reset-request-submit"])) {
     $mail->setFrom("luxury.studio.1840@gmail.com");
     $mail->addAddress($userEmail, $name);
     $mail->Subject = $subject;
-    $mail->Body = $headers . "<br>" . $message;
+    $mail->Body = $headers . "\r\n" . $message;
     $mail->isSMTP();
     $mail->Host = "smtp.gmail.com";
     $mail->SMTPAuth = TRUE;

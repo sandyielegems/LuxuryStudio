@@ -40,7 +40,7 @@
                                 <input type="text" class="form-control" name="mail" placeholder="E-mail">
                                 <input type="text" class="form-control" name="subject" placeholder="Onderwerp">
                                 <textarea class="form-control mt-3" name="message" placeholder="Stel hier uw vraag"></textarea>
-                                <button type="submit" name="submit" class="btn btn-white btn-outline-white py-3 px-4 mt-4">Verstuur</button>
+                                <button type="submit" name="submit-contact" class="btn btn-white btn-outline-white py-3 px-4 mt-4">Verstuur</button>
                             </div>
                         </div>
                     </form>
@@ -48,25 +48,17 @@
             </div>
         </div>
 
-
         <div class="row mt-4">
             <div class="col-md-12 text-center">
-
-                <p>
-                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    <small class="text-muted">
+                <p><small class="text-muted">
                         Copyright &copy;<script>
                             document.write(new Date().getFullYear());
                         </script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a><br><a href="mailto:sandy.ielegems@gmail.com"> Edited by Sandy Ielegems</a>
-                    </small>
-                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                </p>
+                    </small></p>
             </div>
         </div>
     </div>
 </footer>
-
-
 
 <!-- loader -->
 <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">

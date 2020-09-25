@@ -1,4 +1,3 @@
-<!-- promo  -->
 <section class="ftco-section ftco-discount img" style="background-image: url(images/nailsflower.jpg);">
     <div class="overlay"></div>
     <div class="container">

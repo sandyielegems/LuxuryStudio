@@ -3,7 +3,6 @@
         <div class="row">
             <div class="col-md ftco-animate">
                 <div class="media d-block text-center block-6 services">
-                    <!-- <div class="icon d-flex mb-3"><span class="flaticon-facial-treatment"></span></div> -->
                     <div class="text-center">
                         <img src="images/LS-roos.png" alt="logo" width="250">
                     </div>
